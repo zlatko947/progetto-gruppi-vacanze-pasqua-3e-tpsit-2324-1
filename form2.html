@@ -1,0 +1,75 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Progetto a gruppi - HTML/CSS/JS</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+
+  <!-- Personal styles and scripts -->
+  <link href="css/style_form.css" rel="stylesheet" type="text/css"/>
+  <script src="js/script_form2.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="background">
+
+  <main>
+    <div class="wrapper">
+      <form id="registration-form" method="post" action="#" class="was-validated" novalidate>
+        <h1 class="text-white">LOGIN</h1>
+        <div class="input-box">
+          <input id="nomeUtente" type="text" placeholder="Nome" required>
+          <i class='bx bxs-user'></i>
+          <div class="invalid-feedback">
+            inserisci il tuo nome utente
+          </div>
+        </div>
+        <div class="input-box">
+          <input id="addressEmail" type="email" placeholder="Email" required>
+          <i class='bx bxs-envelope'></i>
+          <div class="invalid-feedback">
+            inserisci la tua mail corretta
+          </div>
+        </div>
+        <div class="input-box">
+          <input id="password" type="password" placeholder="Password" required>
+          <i class='bx bxs-lock-alt'></i>
+          <div class="invalid-feedback">
+            inserisci la password
+          </div>
+        </div>
+        <div class="remember-forgot my-3">
+          <label class="text-white"><input type="checkbox">Ricordami</label>
+          <a href="pagina-non-disponibile.html" class="text-white">Password dimenticata?</a>
+        </div>
+        <button id="submitButton2" data-bs-toggle="modal" data-bs-target="#modalButton" type="submit" class="btn">Login</button>
+        <div class="register-link">
+          <p class="text-white">Non hai ancora un'account?<a href="form.html">Registrati</a></p>
+        </div>
+      </form>
+    </div>
+  </main>
+
+
+  <div class="modal" tabindex="-1" id="modalButton">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">CRYPTO RAT</h5>
+          <button type="button" id="btn-close" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Accesso eseguito con successo.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="btn-ok" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
